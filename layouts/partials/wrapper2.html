@@ -1,0 +1,23 @@
+<!-- Wrapper Start -->
+<section id="intro">
+  <h1>About us</h1>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-7 col-sm-12">
+        <div class="block">
+          <div class="section-title">
+            <h2>{{ .Site.Params.wrapper2.title }}</h2>
+            <p>{{ .Site.Params.wrapper2.italic }}</p>
+          </div>
+          <p>{{ .Site.Params.wrapper2.paragraph }}</p>
+          <p>{{ .Site.Params.wrapper2.paragraph2 }}</p>
+        </div>
+      </div><!-- .col-md-7 close -->
+      <div class="col-md-5 col-sm-12">
+        <div class="block">
+         <img src="{{ with .Site.Params.wrapper2.image }} {{ . | absURL }} {{ end }}" alt="Img">
+        </div>
+      </div><!-- .col-md-5 close -->
+    </div>
+  </div>
+</section>
